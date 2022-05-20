@@ -1,0 +1,26 @@
+.outer-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"] {
+    min-width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.canvas-outer-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    flex-direction: column;
+}
+/* 
+.download-btn-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Exercice Damier</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="title">Damier</h1>
+        </div>
+      
+        <div class="outer-form-container">
+            <div class="form-container">
+                <form action="#" name="checkerboard" onsubmit="event.preventDefault(); return showCheckerboard()">
+                    <div class="mb-3">
+                        <label for="row">Nombre de ligne</label>
+                        <input  class="form-control form-control-sm" 
+                                id="row"
+                                name="row"
+                                type="number" 
+                                placeholder="Entrez le nombre de ligne Ex:5" 
+                                aria-label=".form-control-sm example">
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="column">Nombre de colonne</label>
+                        <input  class="form-control form-control-sm" 
+                                id="column"
+                                name="column"
+                                type="number" 
+                                placeholder="Entrez le nombre de colonne Ex:5" 
+                                aria-label=".form-control-sm example">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Soummettre</button>
+                </form>
+            </div>
+          
+        </div>
+        <div class="canvas-outer-container">
+            <div class="canvas-container">
+                <canvas id="myCanvas" width="500" height="400" style="border:1px solid #000000;">
+                </canvas>
+            </div>
+            <div class="download-btn-container">
+                <p>
+                    <button class="btn btn-success" onclick="return downloadPNG()"> Télécharger </button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <script src="./script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
